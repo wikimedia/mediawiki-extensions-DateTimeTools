@@ -14,6 +14,5 @@
 		"jQuery": "readonly"
 	},
 	"rules": {
-		"no-implicit-globals": "off"
 	}
 }
