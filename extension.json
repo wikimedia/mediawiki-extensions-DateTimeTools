@@ -68,7 +68,7 @@
 	"HookHandlers": {
 		"handleTag": {
 			"class": "DateTimeTools\\Hook\\HandleTag",
-			"services": [ "DateTimeToolParser", "ContentLanguage" ]
+			"services": [ "DateTimeToolParser" ]
 		}
 	},
 	"ServiceWiringFiles": [
