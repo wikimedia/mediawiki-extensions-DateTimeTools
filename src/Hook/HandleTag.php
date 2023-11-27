@@ -3,15 +3,12 @@
 namespace DateTimeTools\Hook;
 
 use DateTimeTools\DateTimeParser;
-use Language;
 use MediaWiki\Hook\ParserFirstCallInitHook;
+use RequestContext;
 
 class HandleTag implements ParserFirstCallInitHook {
 	/** @var DateTimeParser */
 	private $dateTimeParser;
-
-	/** @var Language */
-	private $language;
 
 	/**
 	 * @var array
@@ -20,11 +17,9 @@ class HandleTag implements ParserFirstCallInitHook {
 
 	/**
 	 * @param DateTimeParser $parser
-	 * @param Language $language
 	 */
-	public function __construct( DateTimeParser $parser, Language $language ) {
+	public function __construct( DateTimeParser $parser ) {
 		$this->dateTimeParser = $parser;
-		$this->language = $language;
 	}
 
 	/**
@@ -53,11 +48,13 @@ class HandleTag implements ParserFirstCallInitHook {
 		if ( !$dt ) {
 			return 'Invalid date format';
 		}
+		$language = RequestContext::getMain()->getLanguage();
 		if ( $this->dateTimeParser->isMidnight( $dt ) ) {
-			$formatted = $this->language->userDate( $dt->format( 'YmdHid' ), $parser->getUserIdentity() );
+			$formatted = $language->userDate( $dt->format( 'YmdHid' ), $parser->getUserIdentity() );
 		} else {
-			$formatted = $this->language->userTimeAndDate( $dt->format( 'YmdHid' ), $parser->getUserIdentity() );
+			$formatted = $language->userTimeAndDate( $dt->format( 'YmdHid' ), $parser->getUserIdentity() );
 		}
+
 		$parser->getOutput()->addModuleStyles( [ 'ext.dateTimeTools.styles' ] );
 		return \Html::element( 'span', [
 			'class' => 'datetime'
