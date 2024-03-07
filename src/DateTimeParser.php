@@ -1,6 +1,6 @@
 <?php
 
-namespace DateTimeTools;
+namespace MediaWiki\Extension\DateTimeTools;
 
 use DateTime;
 
