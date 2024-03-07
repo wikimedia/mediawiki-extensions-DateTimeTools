@@ -19,7 +19,7 @@
 		"ContentDroplets": {
 			"Droplets": {
 				"date": {
-					"class": "DateTimeTools\\ContentDroplets\\DateDroplet"
+					"class": "MediaWiki\\Extension\\DateTimeTools\\ContentDroplets\\DateDroplet"
 				}
 			}
 		}
@@ -28,8 +28,8 @@
 		"DateTimeTools": "i18n"
 	},
 	"AutoloadNamespaces": {
-		"DateTimeTools\\": "src/",
-		"DateTimeTools\\Tests\\": "tests/phpunit"
+		"MediaWiki\\Extension\\DateTimeTools\\": "src/",
+		"MediaWiki\\Extension\\DateTimeTools\\Tests\\": "tests/phpunit"
 	},
 	"ResourceModules": {
 		"ext.dateTimeTools.styles": {
@@ -67,7 +67,7 @@
 	},
 	"HookHandlers": {
 		"handleTag": {
-			"class": "DateTimeTools\\Hook\\HandleTag",
+			"class": "MediaWiki\\Extension\\DateTimeTools\\Hook\\HandleTag",
 			"services": [ "DateTimeToolParser" ]
 		}
 	},

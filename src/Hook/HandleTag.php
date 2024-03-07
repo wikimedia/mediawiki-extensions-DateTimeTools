@@ -1,8 +1,8 @@
 <?php
 
-namespace DateTimeTools\Hook;
+namespace MediaWiki\Extension\DateTimeTools\Hook;
 
-use DateTimeTools\DateTimeParser;
+use MediaWiki\Extension\DateTimeTools\DateTimeParser;
 use MediaWiki\Hook\ParserFirstCallInitHook;
 use RequestContext;
 
