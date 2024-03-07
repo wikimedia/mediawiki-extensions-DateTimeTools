@@ -1,8 +1,8 @@
 <?php
 
-namespace DateTimeTools\Tests;
+namespace MediaWiki\Extension\DateTimeTools\Tests;
 
-use DateTimeTools\DateTimeParser;
+use MediaWiki\Extension\DateTimeTools\DateTimeParser;
 use Monolog\Test\TestCase;
 
 class ParserTest extends TestCase {
@@ -10,7 +10,7 @@ class ParserTest extends TestCase {
 	/**
 	 * @param string $text
 	 *
-	 * @covers \DateTimeTools\DateTimeParser::parse
+	 * @covers \MediaWiki\Extension\DateTimeTools\DateTimeParser::parse
 	 * @dataProvider provideData
 	 * @return void
 	 */
