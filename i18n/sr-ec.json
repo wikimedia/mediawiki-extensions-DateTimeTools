@@ -5,9 +5,9 @@
 			"Milicevic01"
 		]
 	},
-	"datetimetools-ve-inspector-title": "Уреди датум",
-	"datetimetools-ve-inspector-date-picker-label": "Изаберите датум",
-	"datetimetools-droplet-date-name": "Датум",
-	"datetimetools-desc": "Пружа алатке за датуме у Визуелном уређивачу",
-	"datetimetools-droplet-date-description": "Уношење датума"
+	"datetimetools-ve-inspector-title": "\u0423\u0440\u0435\u0434\u0438 \u0434\u0430\u0442\u0443\u043c",
+	"datetimetools-ve-inspector-date-picker-label": "\u0418\u0437\u0430\u0431\u0435\u0440\u0438\u0442\u0435 \u0434\u0430\u0442\u0443\u043c",
+	"datetimetools-droplet-date-name": "\u0414\u0430\u0442\u0443\u043c",
+	"datetimetools-desc": "\u041f\u0440\u0443\u0436\u0430 \u0430\u043b\u0430\u0442\u043a\u0435 \u0437\u0430 \u0434\u0430\u0442\u0443\u043c\u0435 \u0443 \u0412\u0438\u0437\u0443\u0435\u043b\u043d\u043e\u043c \u0443\u0440\u0435\u0452\u0438\u0432\u0430\u0447\u0443",
+	"datetimetools-droplet-date-description": "\u0423\u043d\u043e\u0448\u0435\u045a\u0435 \u0434\u0430\u0442\u0443\u043c\u0430"
 }
