@@ -2,6 +2,6 @@
 
 return [
 	'DateTimeToolParser' => static function ( \MediaWiki\MediaWikiServices $services ) {
-		return new \DateTimeTools\DateTimeParser();
+		return new \MediaWiki\Extension\DateTimeTools\DateTimeParser();
 	},
 ];

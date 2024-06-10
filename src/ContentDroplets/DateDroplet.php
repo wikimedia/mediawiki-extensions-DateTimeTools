@@ -1,6 +1,6 @@
 <?php
 
-namespace DateTimeTools\ContentDroplets;
+namespace MediaWiki\Extension\DateTimeTools\ContentDroplets;
 
 use MediaWiki\Extension\ContentDroplets\Droplet\TagDroplet;
 use Message;
