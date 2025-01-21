@@ -2,9 +2,9 @@
 
 namespace MediaWiki\Extension\DateTimeTools\Hook;
 
+use MediaWiki\Context\RequestContext;
 use MediaWiki\Extension\DateTimeTools\DateTimeParser;
 use MediaWiki\Hook\ParserFirstCallInitHook;
-use RequestContext;
 
 class HandleTag implements ParserFirstCallInitHook {
 	/** @var DateTimeParser */
