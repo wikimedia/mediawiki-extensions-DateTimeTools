@@ -5,6 +5,7 @@ namespace MediaWiki\Extension\DateTimeTools\Hook;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Extension\DateTimeTools\DateTimeParser;
 use MediaWiki\Hook\ParserFirstCallInitHook;
+use MediaWiki\Html\Html;
 
 class HandleTag implements ParserFirstCallInitHook {
 	/** @var DateTimeParser */
@@ -56,7 +57,7 @@ class HandleTag implements ParserFirstCallInitHook {
 		}
 
 		$parser->getOutput()->addModuleStyles( [ 'ext.dateTimeTools.styles' ] );
-		return \Html::element( 'span', [
+		return Html::element( 'span', [
 			'class' => 'datetime'
 		], $formatted );
 	}
