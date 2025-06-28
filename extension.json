@@ -28,8 +28,10 @@
 		"DateTimeTools": "i18n"
 	},
 	"AutoloadNamespaces": {
-		"MediaWiki\\Extension\\DateTimeTools\\": "src/",
-		"MediaWiki\\Extension\\DateTimeTools\\Tests\\": "tests/phpunit"
+		"MediaWiki\\Extension\\DateTimeTools\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
+		"MediaWiki\\Extension\\DateTimeTools\\Tests\\": "tests/phpunit/"
 	},
 	"ResourceModules": {
 		"ext.dateTimeTools.styles": {
