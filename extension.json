@@ -54,7 +54,7 @@
 			],
 			"dependencies": [
 				"ext.visualEditor.mwcore",
-				"mediawiki.widgets.DateInputWidget"
+				"ext.oOJSPlus.widgets"
 			]
 		}
 	},
