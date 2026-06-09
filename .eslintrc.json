@@ -10,8 +10,9 @@
 	},
 	"globals": {
 		"ext": "readonly",
-		"ve": "readonly",
-		"jQuery": "readonly"
+		"jQuery": "readonly",
+		"OOJSPlus": "readonly",
+		"ve": "readonly"
 	},
 	"rules": {}
 }
