@@ -55,7 +55,7 @@ ext.datetimetools.ui.DateTimeToolsInspector.prototype.initialize = function () {
 };
 
 ext.datetimetools.ui.DateTimeToolsInspector.prototype.createFields = function () {
-	this.dateInput = new OOJSPlus.ui.widget.DateInputWidget();
+	this.dateInput = new OOJSPlus.ui.widget.DateInputWidget( { $overlay: true } );
 	this.dateInput.on( 'change', () => {
 		const value = this.dateInput.getValue();
 		this.input.setValue( value );
