@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"datetimetools-desc": "Poskytuje nástroje na prácu s dátumom vo VisualEditore",
+	"datetimetools-ve-inspector-title": "Upraviť dátum",
+	"datetimetools-ve-inspector-date-picker-label": "Vyberte dátum",
+	"datetimetools-droplet-date-name": "Dátum",
+	"datetimetools-droplet-date-description": "Vloží dátum"
+}
